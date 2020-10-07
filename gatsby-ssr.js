@@ -8,8 +8,8 @@ export const wrapRootElement = ({element}) => {
   return (
     <CartProvider
       stripe={stripePromise}
-      successUrl={`${process.env.URL || 'http://localhost:8000/success'}`}
-      cancelUrl={`${process.env.URL || 'https://twitter.com/dayhaysoos'}`}
+      successUrl={`${process.env.URL || 'http://localhost:8888/success'}`}
+      cancelUrl={`${process.env.URL || 'http://localhost:8888'}`}
       allowedCountries={['US', 'CA', 'GB']}
       currency="USD"
       billingAddressCollection={true}
